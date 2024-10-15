@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Balas Dendam Terbaik dalam Islam</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('malam.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 20px;
+            color: white;
+        }
+        .quiz-container {
+            width: 70%;
+            margin: auto;
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+            color: #white;
+            font-size: 24px;
+        }
+        .question {
+            margin: 20px 0;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            border-left: 5px solid #002366;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        button {
+            background-color: #002366;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            display: block;
+            margin: 20px auto;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #002366;
+        }
+        .hidden {
+            display: none;
+        }
+        p {
+            margin: 10px 0;
+        }
+        #error {
+            color: red;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .result-slide {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 10;
+            display: none;
+            flex-direction: column;
+            text-align: center;
+            overflow-y: auto;
+        }
+        .result-slide h3, .result-slide p {
+            margin: 10px 0;
+        }
+        .wrong {
+            color: red;
+        }
+        .correct {
+            color: green;
+        }
+        .result-question {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+       .box {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px auto;
+    width: 70%;
+}
+
+.correct {
+    color: green;
+}
+
+.wrong {
+    color: red;
+}
+    </style>
+</head>
+<body>
+
+<div class="quiz-container">
+    <h1 align="center">Kuis Interaktif cara Balas Dendam Terbaik dalam Islam</h1></p>
+
+    <!-- Pertanyaan 1 -->
+    <div class="question">
+        <p><b>1. Apa balas dendam terbaik menurut Islam?</b></p>
+        <input type="radio" name="q1" value="A"> A. Membalas dengan kejahatan yang setimpal<br>
+        <input type="radio" name="q1" value="B"> B. Menghukum pelaku<br>
+        <input type="radio" name="q1" value="C"> C. Melaporkan ke pihak berwenang<br>
+        <input type="radio" name="q1" value="D"> D. Memaafkan dan bersabar<br>
+    </div>
+
+    <!-- Pertanyaan 2 -->
+    <div class="question">
+        <p><b>2. Apa yang dikatakan dalam Surat Asy-Syuura ayat 40 tentang balas dendam?</b></p>
+        <input type="radio" name="q2" value="A"> A. Balas dendam harus setimpal dengan yang diterima<br>
+        <input type="radio" name="q2" value="B"> B. Lebih baik memberi maaf dan berbuat baik<br>
+        <input type="radio" name="q2" value="C"> C. Diperbolehkan membalas dengan keburukan yang lebih besar<br>
+        <input type="radio" name="q2" value="D"> D. Harus selalu memaafkan tanpa syarat<br>
+    </div>
+    
+    <!-- Pertanyaan 3 -->
+    <div class="question">
+    				<p><b>3. Apa yang dilakukan Rasulullah SAW saat Penaklukan Mekkah terhadap musuh-musuhnya?</b></p>
+    				<input type="radio" name="q3" value="A">A. Membunuh mereka yang menyakitinya<br>
+    				<input type="radio" name="q3" value="B">B. Menahan mereka sebagai tahanan<br>
+         <input type="radio" name="q3" value="C">C. Memaafkan dan membebaskan mereka<br>
+         <input type="radio" name="q3" value="D">D. Mengusir mereka dari Mekkah<br>
+    </div>
+    
+    <!-- Pertanyaan 4-->
+    <div class="question">
+    				<p><b>4. Siapa Hindun binti Utbah, dan bagaimana Rasulullah SAW memperlakukannya setelah penaklukan Mekkah?</b></p>
+    				<input type="radio" name="q4" value="A">A. Dia adalah seorang sekutu Rasul yang membantu di Perang Uhud, dan dia dihadiahi<br>
+        <input type="radio" name="q4" value="B">B. Dia adalah seorang pembenci Rasul yang dimaafkan setelah penaklukan<br>
+        <input type="radio" name="q4" value="C">C. Dia adalah seorang musuh Rasul yang dibalas dendam oleh Rasul<br>
+        <input type="radio" name="q4" value="D">D. Dia adalah orang yang diusir dari Mekkah oleh Rasul<br>
+    </div>
+   
+    <!-- pertanyaan 5-->
+    <div class="question">
+    				<p><b>5. Bagaimana sikap Rasulullah SAW terhadap suku Yahudi yang mengkhianati perjanjian di Madinah?</b></p>
+    				<input type="radio" name="q5" value="A">A. Mengusir mereka dari Madinah<br>
+        <input type="radio" name="q5" value="B">B. Mengampuni mereka meskipun ada tekanan untuk membalas dendam<br>
+        <input type="radio" name="q5" value="C">C. Menghukum mereka dengan keras<br>
+<input type="radio" name="q5" value="D">D. Mengabaikan perjanjian dan memutus hubungan dengan mereka<br> 				
+    </div>
+    
+    <!-- pertanyaan 6-->
+    <div class="question">
+    				<p><b>6. Apa alasan utama dalam Islam untuk lebih memilih pengampunan daripada balas dendam?</b></p>
+    				<input type="radio" name="q6" value="A">A. Untuk mendapatkan keuntungan duniawi<br>
+        <input type="radio" name="q6" value="B">B. Agar terlihat lebih kuat<br>
+        <input type="radio" name="q6" value="C">C. Meningkatkan derajat di sisi Allah dan menciptakan perdamaian<br>
+        <input type="radio" name="q6" value="D">D. Untuk menghindari konflik fisik<br>
+    </div>
+    
+    <!-- pertanyaan 7-->
+    <div class="question">
+    				<p><b>7. Apa ganjaran bagi orang yang menahan amarah dan memilih untuk memaafkan menurut hadits Rasulullah SAW?</b></p>
+    				<input type="radio" name="q7" value="A">A. Kekayaan melimpah di dunia<br>
+         <input type="radio" name="q7" value="B">B. Kebebasan dari dosa<br>
+         <input type="radio" name="q7" value="C">C. Kesempatan memilih bidadari di akhirat<br>
+         <input type="radio" name="q7" value="D">D. Mendapatkan kekuasaan di dunia<br>
+    </div>
+
+     <!-- pertanyaan 8-->
+     <div class="question">
+     				<p><b>8. Mengapa balas dendam bisa menciptakan siklus kekerasan?</b></p>
+     				<input type="radio" name="q8" value="A">A. Karena setiap tindakan balasan mendorong pembalasan lebih lanjut<br>
+          <input type="radio" name="q8" value="B">B. Karena balas dendam membuat seseorang menjadi lemah<br>
+          <input type="radio" name="q8" value="C">C. Karena hukum Islam melarang balas dendam<br>
+          <input type="radio" nama="q8" value="D">D. Karena balas dendam selalu adil dan setimpal<br>
+     </div>
+     
+     <!-- pertanyaan 9-->
+     <div class="question">
+     <p><b>9. Apa manfaat bagi seseorang yang memaafkan selain dari sisi agama?</b></p>
+     <input type="radio" name="q9" value="A">A. Meningkatkan kesehatan mental dan fisik<br>
+     <input type="radio" name="q9" value="B">B. Mendapatkan kekayaan yang lebih banyak<br>
+<input type="radio" name="q9" value="C">C. Dihormati oleh musuhnya<br>
+     <input type="radio" name="q9" value="D">D. Menjadi lebih berpengaruh di masyarakat<br>
+     </div>
+     
+     <!-- pertanyaan 10 -->
+     <div class="question">
+     				<p><b>10. Apa yang ditunjukkan oleh Rasulullah SAW melalui pengampunan terhadap musuh-musuhnya?</b></p>
+     				<input type="radio" name="q10" value="A">A. Bahwa memaafkan adalah tanda kelemahan<br>
+          <input type="radio" name="q10" value="B">B. Bahwa balas dendam adalah solusi terbaik<br>
+          <input type="radio" name="q10" value="C">C. Bahwa pengampunan dapat menciptakan perdamaian dan kasih sayang<br>
+          <input type="radio" name="q10" value="D">D. Bahwa kekerasan adalah jalan menuju keadilan<br>
+     </div>
+     
+    <!-- Error Message -->
+    <p id="error" class="hidden">Harap diisi semua</p>
+
+    <!-- Tombol Submit -->
+    <button onclick="checkAnswers()">Sudah Selesai</button>
+</div>
+
+<!-- Hasil Slide -->
+<div id="result-slide" class="result-slide">
+    <h3>Hasil Kuis</h3>
+    <p id="loading">Menghitung jawaban...</p>
+    <p id="score" class="hidden"></p>
+    <div id="correct-answers" class="hidden"></div>
+</div>
+
+<script>
+    const correctAnswers = ['D', 'B','C','B','B','C','C','A','A','C'];
+
+    function checkAnswers() {
+    let score = 0;
+    let allAnswered = true;
+    let correctList = ''; // List untuk nomor pertanyaan yang benar
+    let incorrectList = ''; // List untuk nomor pertanyaan yang salah
+    let correctCount = 0;
+    let incorrectCount = 0;
+
+    // Loop untuk memastikan setiap pertanyaan dijawab dan menghitung skor
+    for (let i = 1; i <= 10; i++) {
+        const answer = document.querySelector(`input[name="q${i}"]:checked`);
+
+        // Periksa apakah pertanyaan dijawab
+        if (!answer) {
+            allAnswered = false;
+            break;
+        }
+
+        // Cek apakah jawaban benar atau salah
+        if (answer.value === correctAnswers[i - 1]) {
+            score++;
+            correctCount++;
+            correctList += `<span>Pertanyaan ${i} (pilihanmu: ${answer.value})</span><br>`;
+        } else {
+            incorrectCount++;
+            incorrectList += `<span>Pertanyaan ${i} (pilihanmu: ${answer.value})</span><br>`;
+        }
+    }
+
+    // Jika belum semua pertanyaan dijawab, tampilkan pesan error
+    if (!allAnswered) {
+        document.getElementById("error").classList.remove("hidden");
+        return;
+    }
+
+    // Jika semua pertanyaan dijawab, lanjutkan dan hitung skor
+    document.getElementById("error").classList.add("hidden");
+    const totalScore = score * 10; // Skor akhir dihitung berdasarkan 10 pertanyaan
+
+    // Loading 5 detik sebelum menampilkan hasil
+    document.querySelector(".quiz-container").style.display = "none";
+    document.getElementById("result-slide").style.display = "flex";
+
+    setTimeout(() => {
+        document.getElementById("loading").classList.add("hidden");
+        document.getElementById("score").classList.remove("hidden");
+        document.getElementById("correct-answers").classList.remove("hidden");
+
+        // Menampilkan skor, jumlah benar dan salah, serta daftar jawaban
+        document.getElementById("score").innerHTML = `
+            <div class="box">
+                <h3>Hasil Anda:</h3>
+                <p>Benar = ${correctCount}</p>
+                <p>Salah = ${incorrectCount}</p>
+                <p>Skor Anda: ${totalScore}</p>
+                <h3>Jawaban Benar</h3>
+                ${correctList || '<p>Tidak ada jawaban benar</p>'}
+                <h3>Jawaban Salah</h3>
+                ${incorrectList || '<p>Tidak ada jawaban salah</p>'}
+            </div>
+        `;
+    }, 5000);
+}
+
+// Fungsi untuk mendapatkan teks jawaban
+function getAnswerText(questionNumber, answerValue) {
+    const answerTexts = {
+        1: {
+            A: "Membalas dengan kejahatan yang setimpal",
+            B: "Menghukum pelaku",
+            C: "Melaporkan ke pihak berwenang",
+            D: "Memaafkan dan bersabar"
+        },
+        2: {
+            A: "Balas dendam harus setimpal dengan yang diterima",
+            B: "Lebih baik memberi maaf dan berbuat baik",
+            C: "Diperbolehkan membalas dengan keburukan yang lebih besar",
+            D: "Harus selalu memaafkan tanpa syarat"
+        },
+        3: {
+            A: "Membunuh mereka yang menyakitinya",
+            B: "Menahan mereka sebagai tahanan",
+            C: "Memaafkan dan membebaskan mereka",
+            D: "Mengusir mereka dari Mekkah"
+        },
+        4: {
+            A: "Dia adalah seorang sekutu Rasul yang membantu di Perang Uhud, dan dia dihadiahi",
+            B: "Dia adalah seorang pembenci Rasul yang dimaafkan setelah penaklukan",
+            C: "Dia adalah seorang musuh Rasul yang dibalas dendam oleh Rasul",
+            D: "Dia adalah orang yang diusir dari Mekkah oleh Rasul"
+        },
+        5: {
+            A: "Mengusir mereka dari Madinah",
+            B: "Mengampuni mereka meskipun ada tekanan untuk membalas dendam",
+            C: "Menghukum mereka dengan keras",
+            D: "Mengabaikan perjanjian dan memutus hubungan dengan mereka"
+        },
+        6: {
+            A: "Untuk mendapatkan keuntungan duniawi",
+            B: "Agar terlihat lebih kuat",
+            C: "Meningkatkan derajat di sisi Allah dan menciptakan perdamaian",
+            D: "Untuk menghindari konflik fisik"
+        },
+        7: {
+            A: "Kekayaan melimpah di dunia",
+            B: "Kebebasan dari dosa",
+            C: "Kesempatan memilih bidadari di akhirat",
+            D: "Mendapatkan kekuasaan di dunia"
+        },
+        8: {
+            A: "Karena setiap tindakan balasan mendorong pembalasan lebih lanjut",
+            B: "Karena balas dendam membuat seseorang menjadi lemah",
+            C: "Karena hukum Islam melarang balas dendam",
+            D: "Karena balas dendam selalu adil dan setimpal"
+        },
+        9: {
+            A: "Meningkatkan kesehatan mental dan fisik",
+            B: "Mendapatkan kekayaan yang lebih banyak",
+            C: "Dihormati oleh musuhnya",
+            D: "Menjadi lebih berpengaruh di masyarakat"
+        },
+        10: {
+            A: "Bahwa memaafkan adalah tanda kelemahan",
+            B: "Bahwa balas dendam adalah solusi terbaik",
+            C: "Bahwa pengampunan dapat menciptakan perdamaian dan kasih sayang",
+            D: "Bahwa kekerasan adalah jalan menuju keadilan"
+        }
+    };
+    return answerTexts[questionNumber][answerValue];
+}
+</script>
+
+</body>
+</html>
